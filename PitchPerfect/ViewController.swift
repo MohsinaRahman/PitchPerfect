@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import AVFoundation
 
-class ViewController: UIViewController
+class ViewController: UIViewController, AVAudioRecorderDelegate
 {
+    var audioRecorder: AVAudioRecorder!
     
     @IBOutlet weak var tapToRecordbutton: UILabel!
     @IBOutlet weak var recordButton: UIButton!
@@ -20,5 +22,23 @@ class ViewController: UIViewController
     {
         super.viewDidLoad()
     }
+    
+    override func viewWillAppear(_ animated: Bool)
+    {
+       
+    }
+    @IBAction func recordAudio(_ sender: Any)
+    {
+      
+    }
+    
+    @IBAction func stopRecording(_ sender: Any)
+    {
+        
+    }
+    
+    
+    
+    
 }
 
