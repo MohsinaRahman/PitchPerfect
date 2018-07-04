@@ -123,6 +123,11 @@
                                     <constraint firstItem="oTD-ij-9wr" firstAttribute="top" secondItem="17m-8C-fzP" secondAttribute="top" id="ree-nR-FIW"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPQ-gt-l6x">
+                                <rect key="frame" x="164" y="318" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -133,6 +138,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SSq-VU-VLR"/>
                     </view>
+                    <connections>
+                        <outlet property="chipmunkButton" destination="dr0-VY-RXX" id="9f5-AU-x5d"/>
+                        <outlet property="echoButton" destination="nn0-pA-axd" id="Zng-UN-qsH"/>
+                        <outlet property="rabbitButton" destination="mdH-a3-Xmq" id="1vZ-4Q-mg2"/>
+                        <outlet property="reverbButton" destination="xfr-mz-y6L" id="LWr-mF-MAW"/>
+                        <outlet property="snailButton" destination="4mA-sA-U1d" id="3Xa-yO-wY3"/>
+                        <outlet property="stopButton" destination="gPQ-gt-l6x" id="Z3b-dZ-Ebz"/>
+                        <outlet property="vaderButton" destination="2lb-K4-rbY" id="SVP-jP-Nk5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bRs-56-bvf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
