@@ -3,7 +3,7 @@
 //  PitchPerfect
 //
 //  Created by Mohsina Rahman on 7/3/18.
-//  Copyright © 2018 Nabila Reza. All rights reserved.
+//  Copyright © 2018 Mohsina Rahman. All rights reserved.
 //
 
 import UIKit
@@ -78,8 +78,6 @@ class PlaySoundsViewController: UIViewController
         super.viewWillAppear(animated)
         configureUI(.notPlaying)
     }
-    
-    
     
 
 }

@@ -3,7 +3,7 @@
 //  PitchPerfect
 //
 //  Created by Mohsina Rahman on 6/29/18.
-//  Copyright © 2018 Nabila Reza. All rights reserved.
+//  Copyright © 2018 Mohsina Rahman. All rights reserved.
 //
 
 import UIKit
