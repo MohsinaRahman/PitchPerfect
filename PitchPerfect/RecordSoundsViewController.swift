@@ -15,7 +15,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate
     
     @IBOutlet weak var tapToRecordbutton: UILabel!
     @IBOutlet weak var recordButton: UIButton!
-    
     @IBOutlet weak var stopRecordingbutton: UIButton!
     
     override func viewDidLoad()
@@ -30,9 +29,11 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate
         print("viewWillAppear called")
        
     }
+    
     @IBAction func recordAudio(_ sender: Any)
     {
         updateControls(startRecording: true)
+        
         let dirPath = NSSearchPathForDirectoriesInDomains(.documentDirectory,.userDomainMask, true)[0] as String
         let recordingName = "recordedVoice.wav"
         let pathArray = [dirPath, recordingName]
@@ -85,8 +86,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate
             tapToRecordbutton.text = "Tap to Record"
         }
     }
-    
-    
-    
+
 }
 
