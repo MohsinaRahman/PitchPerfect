@@ -86,6 +86,15 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate
             tapToRecordbutton.text = "Tap to Record"
         }
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if segue.identifier == "stopRecording"
+        {
+            let playSoundsVC = segue.destination as! PlaySoundsViewController
+            let recordedAudioURL = sender as! URL
+            playSoundsVC.recordedAudioURL = recordedAudioURL
+        }
+    }
 
 }
 
