@@ -6,12 +6,12 @@ A simple application to record voice and play it in different pitches. Developed
 In this viewController, users can record their voice
 
 
-![alt text](https://github.com/MohsinaRahman/PitchPerfect/blob/master/IMG_1415.png "IMG 1415")
+![alt text](https://github.com/MohsinaRahman/PitchPerfect/blob/master/record_page.png "Record Page")
 
 ### PlaySoundsViewController:
 In this viewController, user can play their recorded voice in different pitches
 
-![alt text](https://github.com/MohsinaRahman/PitchPerfect/blob/master/mapview_page.png "Mapview Page")
+![alt text](https://github.com/MohsinaRahman/PitchPerfect/blob/master/play_page.png "Play Page")
 
 
 # Tools
