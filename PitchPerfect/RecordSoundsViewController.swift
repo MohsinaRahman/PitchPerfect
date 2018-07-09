@@ -13,7 +13,8 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate
 {
     var audioRecorder: AVAudioRecorder!
     
-    @IBOutlet weak var tapToRecordbutton: UILabel!
+    @IBOutlet weak var recordingLabel: UILabel!
+    
     @IBOutlet weak var recordButton: UIButton!
     @IBOutlet weak var stopRecordingbutton: UIButton!
     
@@ -75,7 +76,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate
     {
         if startRecording
         {
-            tapToRecordbutton.text = "Recording in progress"
+            recordingLabel.text = "Recording in progress"
             stopRecordingbutton.isEnabled = true
             recordButton.isEnabled = false
         }
@@ -83,7 +84,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate
         {
             recordButton.isEnabled = true
             stopRecordingbutton.isEnabled = false
-            tapToRecordbutton.text = "Tap to Record"
+            recordingLabel.text = "Tap to Record"
         }
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
